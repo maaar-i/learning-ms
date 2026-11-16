@@ -8,7 +8,14 @@
 
 
 .login-page{
+  display: grid;
+  grid-template-rows: repeat(2,50%);
+  /* background-color:rgb(89,6,50); */
+}
+
+.login-wallpaper{
   background-color: white;
+  /* color:rgb(89,6,50); */
 }
 
 .loginpfp{
@@ -22,7 +29,7 @@
 
 .login-title{
   color: rgb(89,6,50);
-  text-align: center;
+  /* text-align: center; */
   font-size:40px;
   font-weight: 300;
 }

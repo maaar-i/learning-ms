@@ -11,7 +11,7 @@ export default function Login() {
       <div className="login-page">
 
         <div className="login-wallpaper">
-          <img src="./img/loginpfp.jpg" className="loginpfp"></img>
+          {/* <img src="./img/loginpfp.jpg" className="loginpfp"></img> */}
           <h1 className="login-title">LOGIN</h1>
         </div>
 
