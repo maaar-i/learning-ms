@@ -4,26 +4,32 @@ export default function Login() {
   return (
     <main>
 
-      <div>
-        <img></img>
-      </div>
-
       <div className="login-page">
+                  <div className="login-wallpaper">
+              <img src="./img/loginwallp.JPG"></img>
+          </div>
 
-        <div className="login-wallpaper">
-          {/* <img src="./img/loginpfp.jpg" className="loginpfp"></img> */}
-          <h1 className="login-title">LOGIN</h1>
-        </div>
+          <div class="login-form">
+            <img src="./img/loginpfp.JPG"></img>
+            <h1>LOGIN</h1>
 
-        <form>
-          <input placeholder="Email" type="email" className="email-field"></input><br/>
-          <input placeholder="Password" type="password" className="password-field"></input><br/>
-          <button type="submit" className="login-submit-field">Login</button><br/>
-        </form>
+                          <form>
+                  <p class="input">
+                      <i class="fa-solid fa-circle-user"></i>
+                    <input type="email" placeholder="Email"></input>
+                  </p>
 
-        <a href="#" className="forgot-password">Forgot Password?</a><br/>
+                  <p  class="input">
+                      <i class="fa-solid fa-lock"></i>
+                      <input type="password" placeholder="Password"></input>
+                  </p>
+                  
+                  <a href="#" class="forgot-pass">Forgot Password?</a>
+
+                  <button type="submit">LOGIN</button><br/>
+              </form>
+          </div>
       </div>
-
     </main>
   );
 }

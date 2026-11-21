@@ -1,39 +1,85 @@
 @import "tailwindcss";
 
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: fit-content;
 }
 
-
 .login-page{
-  display: grid;
-  grid-template-rows: repeat(2,50%);
-  /* background-color:rgb(89,6,50); */
+    background-color: rgb(255,255,255);
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.login-form{
+    /* padding: 20px; */
+
+    h1{
+        margin: 10px 550px 20px 145px;
+        /* text-align: center; */
+        color: rgb(92,42,83);
+        
+    }
+
+    img{
+        margin: 100px 600px 20px 100px;
+        /* border: 2px solid rgb(243,203,221); */
+        border-radius: 1000px;
+        width: 200px;
+        height:200px;
+    }
+}
+
+.input{
+    /* border: 2px solid rgb(243,203,221); */
+    /* border: 2px solid rgb(137,81,89); */
+    border-radius: 25px;
+    padding: 10px;
+    margin:0 0 15px 10px;
+    /* border-bottom: 2px solid rgb(243,203,221); */
+    border-bottom: 2px solid gray;
+    /* background-color: rgb(215, 197, 216); */
+
+
+    i{
+        color: gray;
+        font-size: 20px;
+    }
+
+    input{
+        /* color: rgb(215, 197, 216); */
+        /* background-color: rgb(215, 197, 216); */
+        font-size: 25px;
+        /* margin-left:120px ; */
+        padding:9px;
+        border: none;
+        /* border-bottom: 2px solid rgb(243,203,221); */
+        outline:none;
+
+        ::placeholder{
+            color: white;
+            opacity: 1;
+        }
+    }
+
+}
+
+.forgot-pass{
+    /* text-align: right; */
+    margin-left: 235px;
+    text-decoration: none;
+    color: rgb(92,42,83);
+    font-weight: 600;
 }
 
 .login-wallpaper{
-  background-color: white;
-  /* color:rgb(89,6,50); */
+    img{
+        width: 70vh;
+        height: 100vh;
+    }
 }
-
-.loginpfp{
-  /* display: flex;
-  justify-content: center; */
-  border-radius: 130px;
-  width: 200px;
-  height: 220px;
-
-}
-
-.login-title{
-  color: rgb(89,6,50);
-  /* text-align: center; */
-  font-size:40px;
-  font-weight: 300;
-}
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
